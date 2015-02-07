@@ -1,0 +1,52 @@
+/* colors used:
+
+   gray: #6B6A64;
+   purple: #595BC6;
+   blue: #4C92A8;
+   forest green: #3A9161;
+   lime: #A1EC67;
+
+*/
+
+body {
+   color: #6B6A64;
+}
+
+.main-heading {
+   background-color: #595BC6;
+   height: 200px;
+   color: #fff;
+   margin-bottom: 20px;
+}
+
+.col-sm-4 img {
+   max-width: 100%;
+}
+
+.section-header {
+   text-align: center;
+   border-bottom: 1px solid #6B6A64;
+   margin-bottom: 20px;
+}
+
+.item-name {
+   color: #3A9161;
+}
+
+/* UTILITY CLASSES */
+
+.inactive {
+   display: none;
+}
+
+.row img {
+   max-height: 190px;
+   text-align: center;
+}
+.col-sm-4{
+   margin-bottom: 20px;
+}
+
+li {
+   list-style: none;
+}

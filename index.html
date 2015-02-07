@@ -2,14 +2,88 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Untitled</title>
-    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+    <title>RefactorU Diner</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    
     <link rel="stylesheet" type="text/css" href="main.css">
   </head>
   <body>
     
+    <header>
+      <div class="main-heading">
+        <div class="container">
+          <h1 class='col-sm-12'>The RefactorU Diner</h1>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-12 section-header">
+          <h2>Our Menu</h2>
+        </div>
+      </div>
+
+      <div class="plates">
+        <h2 class="text-muted">Entrees</h2>
+        <div class="row">
+        </div>
+      </div>
+      <div class="drinks">
+        <h2 class="text-muted">Drinks</h2>
+        <div class="row">
+        </div>
+      </div>
+      <button class="btn submitOrder btn-success">Submit Order</button>
+    </div>
+    
+    <div class="container">
+      <div class="customerOrder">
+        <h2>Your Order:</h2>
+      </div>
+    </div>
+
+    <!-- TEMPLATES FOR MENU ITEMS -->
+    <div id="item-template" class="col-sm-4 inactive item">
+      <img src="">
+      <h3 class="item-name">ITEM NAME</h3>
+      <p class="item-description">ITEM DESCRIPTION</p>
+      <p class="item-price">ITEM PRICE</p>
+      <p class="item-cals">ITEM CALS</p>
+      <button class="btn btn-success order-btn" >Add to Order</button>
+    </div>
+    
+
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+      Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Your Order:</h4>
+          </div>
+          <div class="modal-body">
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Place Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.js"></script>
     <script src="main.js"></script>
 
   </body>
